@@ -1,0 +1,59 @@
+{
+    "id": "cmpl-6UV1rpeFYObnSPGxJS2vx2XwUGp7g",
+    "object": "text_completion",
+    "created": 1672727135,
+    "model": "davinci",
+    "choices": [
+        {
+            "text": ".”\n\nRandy wrinkled her forehead and concentrated: There was something familiar about that voice. Something … Or maybe she just recognized it as the voice of someone trying extremely hard to be casual. She groaned. “I hate this,” she said. “It’s really annoying to have the gods talking to you while you’re eating lunch. I wish they’d just leave me alone.”\n\n“You don’t mean that,” Ares said grinning and revealing for a split second his terrible teeth in all their glory.\n\n“I do.”\n\n“Well, I’ve good news for you then. The",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 1,
+        "completion_tokens": 150,
+        "total_tokens": 151
+    }
+}
+
+{
+    "id": "cmpl-6UUxv8LkoUSbs6uvQu5pgJI74q65n",
+    "object": "text_completion",
+    "created": 1672726891,
+    "model": "davinci",
+    "choices": [
+        {
+            "text": "'s]] {{{Hi's}}} + ==How bad is the graphics violence/language for \"South Park: The Fractured But Whole\"== − {{quote|All that said, if you roll a deep stealth rogue who's got a pet for every occasion , [[Dual Wield]]ing weapons of [[Silence]] and whirling around, slicing throats and casting spells like you're some kind of bloodletting dervish, it can really be fun. And, yes, it can be funny.|Knightfreak200}} + *The Fae-ntastics Director (Leveling up Buddy) : [[Kickin' Icky's butt ]] − == Comments == + *[[Cannibalism! ]]",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 1,
+        "completion_tokens": 150,
+        "total_tokens": 151
+    }
+}
+
+{
+    "id": "cmpl-6UV5sRgDw5i5bAGSEPYYlfHPf0J2c",
+    "object": "text_completion",
+    "created": 1672727384,
+    "model": "davinci",
+    "choices": [
+        {
+            "text": " I feel so awful but don't know how i can avoid it? what should i do to help myself? he never been any good as a friend...",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 3,
+        "completion_tokens": 31,
+        "total_tokens": 34
+    }
+}
