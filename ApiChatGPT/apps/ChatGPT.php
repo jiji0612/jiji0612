@@ -17,7 +17,7 @@ class ChatGPT extends Line_Apps
         try {
             $text = $message['text'];
             $ai = new OpenAi($this->open_ai_key);
-            $_SESSION["ai"] = $ai;
+
             $complete = $ai->completion([
                 'model' => 'text-davinci-003',
                 'prompt' => $text,
