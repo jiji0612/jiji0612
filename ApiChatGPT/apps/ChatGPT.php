@@ -17,11 +17,13 @@ class ChatGPT extends Line_Apps
             $text = $message['text'];
             $open_ai = new OpenAi("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", "org-R9oUMeKtc3HpcqlSAEBzltwM");
             $complete = $open_ai->completion([
+                'model' => "text-davinci-003",
                 'prompt' => $text,
-                'temperature' => 0.9,
-                'max_tokens' => 150,
+                'temperature' => 0.7,
+                'max_tokens' => 256,
+                'top_p' => 1,
                 'frequency_penalty' => 0,
-                'presence_penalty' => 0.6,
+                'presence_penalty' => 0,
             ]);
 
             $rets = json_decode($complete, true);
