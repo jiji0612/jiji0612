@@ -15,7 +15,7 @@ class ChatGPT extends Line_Apps
     {
         try {
             $text = $message['text'];
-            $open_ai = new OpenAi('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', 'SoftYs');
+            $open_ai = new OpenAi('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', 'SoftYs');
             $complete = $open_ai->completion([
                 'prompt' => $text,
                 'temperature' => 0.9,
