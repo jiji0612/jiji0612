@@ -365,6 +365,7 @@ class OpenAi
         } else {
             $this->headers[0] = $this->contentTypes["application/json"];
         }
+        $config['useragent'] = 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0';
         $curl_info = [
             CURLOPT_URL => $url,
             CURLOPT_RETURNTRANSFER => true,
@@ -376,6 +377,8 @@ class OpenAi
             CURLOPT_CUSTOMREQUEST => $method,
             CURLOPT_POSTFIELDS => $post_fields,
             CURLOPT_HTTPHEADER => $this->headers,
+            CURLOPT_USERAGENT => $config['useragent'],
+            CURLOPT_REFERER => 'https://softysapi.herokuapp.com'
         ];
 
         if ($opts == []) {
