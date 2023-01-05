@@ -6,11 +6,6 @@ use Orhanerday\OpenAi\OpenAi;
 class ChatGPT extends Line_Apps
 {
     private $open_ai_key = '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';
-    private $open_ai;
-
-    function getapi_owner(){
-        return new OpenAi($this->open_ai_key);
-    }
 
     function on_follow()
     {
@@ -21,7 +16,7 @@ class ChatGPT extends Line_Apps
     {
         try {
             $text = $message['text'];
-            $ai = isset($_SESSION["ai"]) ? $_SESSION["ai"] : $this->getapi_owner();
+            $ai = new OpenAi($this->open_ai_key);
             $_SESSION["ai"] = $ai;
             $complete = $ai->completion([
                 'model' => 'text-davinci-003',
