@@ -18,7 +18,7 @@ class ChatGPT extends Line_Apps
         try {
             $text = $message['text'];
             $complete = $this->open_ai->completion([
-                'model' => 'davinci',
+                'engine' => 'davinci',
                 'prompt' => $text,
                 'temperature' => 0.9,
                 'max_tokens' => 150,
