@@ -38,7 +38,7 @@ class ChatGPT extends Line_Apps
             // $ret = preg_replace('/[^A-Za-z0-9\-]/', ' ', $ret);
 
             $messages = array();
-            $messages[] = array('type' => 'text', 'text' => '"' . $rets . '"');
+            $messages[] = array('type' => 'text', 'text' => '"' . $complete . '"');
             return $messages;
         } catch (Exception $e) {
             return $e->getMessage();
