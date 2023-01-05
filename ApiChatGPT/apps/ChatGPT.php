@@ -15,7 +15,7 @@ class ChatGPT extends Line_Apps
         try {
             $text = $message['text'];
 
-            $open_ai_key = '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';
+            $open_ai_key = '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';
             $ai = new OpenAi($open_ai_key);
 
             $complete = $ai->completion([
