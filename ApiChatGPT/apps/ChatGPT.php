@@ -5,8 +5,6 @@ use Orhanerday\OpenAi\OpenAi;
 
 class ChatGPT extends Line_Apps
 {
-    private $open_ai_key = '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';
-
     function on_follow()
     {
         return "Hi!";
@@ -16,13 +14,15 @@ class ChatGPT extends Line_Apps
     {
         try {
             $text = $message['text'];
-            $ai = new OpenAi($this->open_ai_key);
+
+            $open_ai_key = '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';
+            $ai = new OpenAi($open_ai_key);
 
             $complete = $ai->completion([
                 'model' => 'text-davinci-003',
                 'prompt' => $text,
                 'temperature' => 0.9,
-                'max_tokens' => 150,
+                'max_tokens' => 256,
                 'frequency_penalty' => 0,
                 'presence_penalty' => 0.6,
             ]);
