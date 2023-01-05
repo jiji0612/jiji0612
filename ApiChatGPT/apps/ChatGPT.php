@@ -6,8 +6,6 @@ use Orhanerday\OpenAi\OpenAi;
 class ChatGPT extends Line_Apps
 {
 
-    private $open_ai = new OpenAi('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', 'SoftYs');
-
     function on_follow()
     {
         return "Hi!";
@@ -17,7 +15,8 @@ class ChatGPT extends Line_Apps
     {
         try {
             $text = $message['text'];
-            $complete = $this->open_ai->completion([
+            $open_ai = new OpenAi('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', 'SoftYs');
+            $complete = $open_ai->completion([
                 'prompt' => $text,
                 'temperature' => 0.9,
                 'max_tokens' => 150,
