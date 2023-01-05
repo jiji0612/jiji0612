@@ -1,4 +1,16 @@
 # OpenAI GPT-3 Api Client in PHP
+<br />
+
+<br />
+
+*A message from creator,<br />Thank you for visiting the __@orhanerday/open-ai__ repository! We are thrilled to see that it has been downloaded nearly 30k times. If you find this repository helpful or useful, we encourage you to **star** it on GitHub. Starring a repository is a way to show your support for the project. It also helps to increase the visibility of the project and to let the community know that it is valuable. Thanks again for your support and we hope you find the repository useful! <br /><br /> Orhan*
+
+<br />
+
+<br />
+<br />
+
+
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/orhanerday/open-ai.svg?style=flat-square)](https://packagist.org/packages/orhanerday/open-ai)
 [![Total Downloads](https://img.shields.io/packagist/dt/orhanerday/open-ai.svg?style=flat-square)](https://packagist.org/packages/orhanerday/open-ai)
@@ -12,6 +24,15 @@
 <br />
 
 <br />
+
+
+# Comparison With Other Packages
+
+| Project Name           | Required PHP Version | Downloads                                                                                                                                                                     | Decription                                                                                                                                                 | Type (Official / Community) | Support                                                                                                                                |
+|------------------------|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| **orhanerday/open-ai** | **PHP 7.4+**         | **[![Total Downloads](https://img.shields.io/packagist/dt/orhanerday/open-ai.svg?style=flat-square)](https://packagist.org/packages/orhanerday/open-ai) <br>🚀nearly 30K 🚀** | **Most downloaded, forked, contributed, huge community supported, and used PHP SDK for OpenAI GPT-3 and DALL-E. It also supports chatGPT-like streaming.** | Community                   | Available, ([Community driven Discord Server](https://discord.gg/mtY2jCsQgx) or personal mail [orhan@duck.com](mailto:orhan@duck.com)) |
+| openai-php/client      | PHP 8.1+             | <a href="https://packagist.org/packages/openai-php/client"><img alt="Total Downloads" src="https://img.shields.io/packagist/dt/openai-php/client"></a>                        | OpenAI PHP API client.                                                                                                                                     | Community                   | -                                                                                                                                      |
+
 
 <br />
 
@@ -28,11 +49,67 @@ Fully open-source and secure community-maintained, PHP SDK for accessing the Ope
 - orhanerday/open-ai added to community libraries php [section](https://beta.openai.com/docs/libraries/php).
 - orhanerday/open-ai featured on [PHPStorm blog post](https://blog.jetbrains.com/phpstorm/2022/12/php-annotated-december-2022/#:~:text=orhanerday/open%2Dai%20%E2%80%93%20A%20PHP%20SDK%20for%20accessing%20the%20OpenAI%20GPT%2D3%20API), thanks JetBrains! 
 
+> Requires PHP 7.4+
+
 ## Join our discord server
 ![Discord Banner 2](https://discordapp.com/api/guilds/1047074572488417330/widget.png?style=banner2)
 
 [Click here to join the Discord server](https://discord.gg/mtY2jCsQgx)
 
+## Support this project
+
+As you may know, OpenAI PHP is an open-source project wrapping tool for OpenAI. We rely on the support of our community to continue developing and maintaining the project, and one way that you can help is by making a donation.
+
+Donations allow us to cover expenses such as hosting costs(for testing), development tools, and other resources that are necessary to keep the project running smoothly. Every contribution, no matter how small, helps us to continue improving OpenAI PHP for everyone.
+
+If you have benefited from using OpenAI PHP and would like to support its continued development, we would greatly appreciate a donation of any amount. You can make a donation through;
+* [Buy me a coffee](https://www.buymeacoffee.com/orhane)
+* [Patreon](https://patreon.com/orhann)
+* [Click here for the Coinbase QR](#btc) **Bitcoin** > 34w2DftWGkDqDbYMixkmdWWMLmaP9uTRz7
+* [Click here for the Coinbase QR](#doge) **Dogecoin** > DHiqcZox9M8kYDn7BkesnN6Z2kJ7dYG9Lc
+* [Click here for the Coinbase QR](#eth) **Ethereum** > 0x135E2D5d7AC40c6850f844BA589D68e91a268Ceb
+
+
+Thank you for considering a donation to Orhanerday/OpenAI PHP SDK. Your support is greatly appreciated and helps to ensure that the project can continue to grow and improve.
+
+*Sincerely,*
+
+**Orhan Erday** / Creator.
+
+# Endpoint Support
+
+- Models
+  - [x] [List models](https://beta.openai.com/docs/api-reference/models/list)
+  - [x] [Retrieve model](https://beta.openai.com/docs/api-reference/models/retrieve)
+- Completions
+  - [x] [Create completion](https://beta.openai.com/docs/api-reference/completions/create)
+- Edits
+  - [x] [Create edits](https://beta.openai.com/docs/api-reference/edits/create)
+- Images
+  - [x] [Create image](https://beta.openai.com/docs/api-reference/images/create)
+  - [x] [Create image edit](https://beta.openai.com/docs/api-reference/images/create-edit)
+  - [x] [Create image variation](https://beta.openai.com/docs/api-reference/images/create-variation)
+- Embeddings
+  - [x] [Create embeddings](https://beta.openai.com/docs/api-reference/embeddings/create)
+- Files
+  - [x] [List files](https://beta.openai.com/docs/api-reference/files/list)
+  - [x] [Upload file](https://beta.openai.com/docs/api-reference/files/upload)
+  - [x] [Delete file](https://beta.openai.com/docs/api-reference/files/delete)
+  - [x] [Retrieve file](https://beta.openai.com/docs/api-reference/files/retrieve)
+  - [x] [Retrieve file content](https://beta.openai.com/docs/api-reference/files/retrieve-content)
+- Fine-tunes
+  - [x] [Create fine-tune (beta)](https://beta.openai.com/docs/api-reference/fine-tunes/create)
+  - [x] [List fine-tunes (beta)](https://beta.openai.com/docs/api-reference/fine-tunes/list)
+  - [x] [Retrieve fine-tune (beta)](https://beta.openai.com/docs/api-reference/fine-tunes/retrieve)
+  - [x] [Cancel fine-tune (beta)](https://beta.openai.com/docs/api-reference/fine-tunes/cancel)
+  - [x] [List fine-tune events (beta)](https://beta.openai.com/docs/api-reference/fine-tunes/events)
+  - [x] [Delete fine-tune model (beta)](https://beta.openai.com/docs/api-reference/fine-tunes/delete-model)
+- Moderation
+  - [x] [Create moderation](https://beta.openai.com/docs/api-reference/moderations/create)
+- ~~Engines~~ *(deprecated)*
+  - ~~[List engines](https://beta.openai.com/docs/api-reference/engines/list)~~
+  - ~~[Retrieve engine](https://beta.openai.com/docs/api-reference/engines/retrieve)~~
+  
 ## Installation
 
 You can install the package via composer:
@@ -120,6 +197,8 @@ $complete = $open_ai->completion([
 
 ### Stream Example
 
+This feature might sound familiar from [ChatGPT](https://chat.openai.com/chat).
+
 Whether to stream back partial progress. If set, tokens will be sent as data-only [server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events#event_stream_format) as they become available, with the stream terminated by a data: [DONE] message.
 
  ````php
@@ -133,6 +212,10 @@ $opts = [
     "presence_penalty" => 0.6,
     "stream" => true,
 ];
+
+header('Content-type: text/event-stream');
+header('Cache-Control: no-cache');
+
 $open_ai->completion($opts, function ($curl_info, $data) {
     echo $data . "<br><br>";
     echo PHP_EOL;
@@ -142,6 +225,35 @@ $open_ai->completion($opts, function ($curl_info, $data) {
 });
 
 ````
+
+Add this part inside `<body>` of the HTML
+
+ ````php
+ 
+<div id="divID">Hello</div>
+<script>
+    var eventSource = new EventSource("/");
+    var div = document.getElementById('divID');
+
+
+    eventSource.onmessage = function (e) {
+       if(e.data == "[DONE]")
+       {
+           div.innerHTML += "<br><br>Hello";
+       }
+        div.innerHTML += JSON.parse(e.data).choices[0].text;
+    };
+    eventSource.onerror = function (e) {
+        console.log(e);
+    };
+</script>
+````
+
+You should see a response like the in video;
+
+https://user-images.githubusercontent.com/22305274/209847128-f72c9345-dd34-46f0-bbc5-daf1d7b6121f.mp4
+
+
 
 ## Edits
 
@@ -490,3 +602,12 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 <a href="https://www.buymeacoffee.com/orhane" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
+
+#### btc
+![image](https://user-images.githubusercontent.com/22305274/209946578-fc7db433-699c-491f-9f8b-1c962f0b9ea2.png)
+
+#### eth
+![image](https://user-images.githubusercontent.com/22305274/209946539-24f247d9-68a1-4f46-a18b-62790d943c99.png)
+
+#### doge
+![image](https://user-images.githubusercontent.com/22305274/209946556-164798d0-e404-4b6c-8669-d63e78f24228.png)
