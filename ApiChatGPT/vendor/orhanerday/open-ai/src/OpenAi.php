@@ -13,7 +13,7 @@ class OpenAi
     private int $timeout = 0;
     private object $stream_method;
 
-    public function __construct($OPENAI_API_KEY)
+    public function __construct($OPENAI_API_KEY, $OPENAI_ORG = "")
     {
         $this->contentTypes = [
             "application/json" => "Content-Type: application/json",
@@ -24,6 +24,10 @@ class OpenAi
             $this->contentTypes["application/json"],
             "Authorization: Bearer $OPENAI_API_KEY",
         ];
+
+        if ($OPENAI_ORG != "") {
+            $this->headers[] = "OpenAI-Organization: $OPENAI_ORG";
+        }
     }
 
     /**
@@ -365,7 +369,6 @@ class OpenAi
         } else {
             $this->headers[0] = $this->contentTypes["application/json"];
         }
-
         $curl_info = [
             CURLOPT_URL => $url,
             CURLOPT_RETURNTRANSFER => true,
@@ -377,8 +380,6 @@ class OpenAi
             CURLOPT_CUSTOMREQUEST => $method,
             CURLOPT_POSTFIELDS => $post_fields,
             CURLOPT_HTTPHEADER => $this->headers,
-            CURLOPT_USERAGENT => 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:17.0) Gecko/20100101 Firefox/17.0',
-            CURLOPT_REFERER => 'https://softysapi.herokuapp.com'
         ];
 
         if ($opts == []) {
