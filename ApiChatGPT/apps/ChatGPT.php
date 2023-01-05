@@ -5,7 +5,7 @@ use Orhanerday\OpenAi\OpenAi;
 
 class ChatGPT extends Line_Apps
 {
-    private $open_ai_key = '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';
+    private $open_ai_key = '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';
     private $open_ai;
 
     function getapi_owner(){
