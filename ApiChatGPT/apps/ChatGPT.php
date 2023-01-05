@@ -33,12 +33,12 @@ class ChatGPT extends Line_Apps
             ]);
 
             $rets = json_decode($complete, true);
-            $ret = $rets["choices"][0]["text"];
-            $ret = preg_replace("@\n@", " ", $ret);
-            $ret = preg_replace('/[^A-Za-z0-9\-]/', ' ', $ret);
+            //$ret = $rets["choices"][0]["text"];
+            // $ret = preg_replace("@\n@", " ", $ret);
+            // $ret = preg_replace('/[^A-Za-z0-9\-]/', ' ', $ret);
 
             $messages = array();
-            $messages[] = array('type' => 'text', 'text' => '"' . $ret . '"');
+            $messages[] = array('type' => 'text', 'text' => '"' . $rets . '"');
             return $messages;
         } catch (Exception $e) {
             return $e->getMessage();
